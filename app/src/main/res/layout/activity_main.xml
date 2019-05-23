@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fullname_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:onClick="callRegisterForm"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/fullname_text"
+        android:layout_height="450dp"
+        android:layout_width="match_parent"
+        android:id="@+id/note_list"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="@string/logout_button"
+        android:onClick="callLogout"/>
+
+</RelativeLayout>
